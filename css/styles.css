@@ -21,10 +21,10 @@ h1 {
     font-size: 0.75rem;
 }
 
-
  /* =================
     Layout
     ================= */
+
 .container {
     width: 90%;
     max-width: 900px;
@@ -72,4 +72,24 @@ nav a:focus {
 
 .current-page:hover {
     color: #707070;
+}
+
+@media screen and (max-width: 675px) {
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
 }
