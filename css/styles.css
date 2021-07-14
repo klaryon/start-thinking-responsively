@@ -88,7 +88,7 @@ strong {
 
 header {
     background: #f8f8f8;
-    padding: 2em;
+    padding: 2em 0;
     text-align: center;
 }
 
@@ -139,7 +139,7 @@ nav a:focus {
     color: #707070;
 }
 
-@media screen and (max-width: 675px) {
+@media (max-width: 675px) {
     nav ul {
         flex-direction: column;
     }
