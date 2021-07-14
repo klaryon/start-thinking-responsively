@@ -10,9 +10,9 @@ img {
     display: block;
 }
 
- /* =================
-    Typography
-    ================= */
+/* =================
+Typography
+================= */
 
 h1, 
 h2, 
@@ -38,7 +38,6 @@ a:focus {
 }
 
 strong {
-    color: #707070;
     font-weight: 700;
 }
 
@@ -75,9 +74,19 @@ strong {
     margin: 2em 0;
 }
 
- /* =================
-    Layout
-    ================= */
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+/* =================
+Layout
+================= */
 
 .container {
     width: 90%;
@@ -96,6 +105,13 @@ header {
     padding: 2em 0;
     text-align: center;
     margin-bottom: 3em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
 }
 
 @media (min-width: 675px) {
@@ -221,6 +237,18 @@ nav a:focus {
     padding: 1em;
 }
 
-.widget-title {
-    font-weight: 700;
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: -1;
 }
